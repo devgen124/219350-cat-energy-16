@@ -1,9 +1,10 @@
 .page-header {
-  margin: 0;
   border-bottom: 1px solid @light-grey;
+  position: relative;
+  z-index: 1;
 }
 
-.page-header__layout {
+.page-header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,4 +16,22 @@
   display: inline-block;
   margin: 0;
   line-height: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    margin-bottom: -104px;
+  }
 }

@@ -1,8 +1,7 @@
 .button {
   width: 100%;
   box-sizing: border-box;
-  height: 40px;
-  padding-top: 10px;
+  padding: 10px 0;
   display: block;
 
   .oswald-regular(14px, 18px);
@@ -21,4 +20,12 @@
 .button--grey {
   color: @greyish-brown;
   background-color: @white-three;
+}
+
+@media (min-width: @tablet-width) {
+  .button--intro {
+    width: 245px;
+    padding: 16px 0;
+    .oswald-regular(20px, 20px);
+  }
 }

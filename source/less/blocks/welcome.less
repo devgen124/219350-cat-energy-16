@@ -1,0 +1,51 @@
+.welcome {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -5px;
+  padding-top: 28px;
+  padding-bottom: 27px;
+}
+
+.welcome--white {
+  background: @white;
+}
+
+.welcome__title {
+  max-width: 123px;
+  margin: 0;
+  .oswald-regular (16px, 20px);
+  text-transform: uppercase;
+  text-align: left;
+  color: @black-two;
+}
+
+.welcome__text {
+  max-width: 134px;
+  margin: 0;
+  margin-right: 5px;
+  .arial (14px, 20px);
+  text-align: left;
+  color: @greyish-brown;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome {
+    padding: 64px 67px 60px 71px;
+  }
+
+  .welcome__title {
+    .oswald-regular (20px, 25px);
+  }
+
+  .welcome__text {
+    max-width: 153px;
+    .arial (16px, 20px);
+    text-align: right;
+
+    span {
+      display: block;
+      padding-top: 19px;
+    }
+  }
+}

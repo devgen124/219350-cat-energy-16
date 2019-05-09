@@ -1,7 +1,7 @@
 .intro {
-  margin: 0;
-  margin-bottom: 22px;
+  margin: 0 0 22px;
   padding: 0;
+  position: relative;
   text-align: center;
   color: @white;
   background-color: @green;
@@ -11,27 +11,63 @@
 }
 
 .intro__title {
-  margin: 0;
-  margin-bottom: 25px;
-  padding-top: 25px;
+  margin: 0 0 25px;
+  padding-top: 27px;
   .oswald-regular (36px, 36px);
-  text-align: center;
 }
 
 .intro__slogan {
-  margin: 0;
-  margin-bottom: 28px;
+  margin: 0 0 28px;
   .oswald-regular (14px, 14px);
   text-transform: uppercase;
-  text-align: center;
-}
-
-.intro__image {
-  text-align: center;
 }
 
 .intro__button {
   display: block;
   margin: 0 auto;
-  text-align: center;
+  text-align: inherit;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    min-height: 876px;
+    margin: 0;
+    padding-left: 90px;
+    text-align: left;
+    color: @black-two;
+    background: none;
+  }
+
+  .intro__title {
+    max-width: 415px;
+    margin: 0 0 42px;
+    padding-top: 65px;
+    .oswald-regular (60px, 60px);
+  }
+
+  .intro__slogan {
+    margin: 0 0 48px;
+    .oswald-regular (20px, 20px);
+  }
+
+  .intro__image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 709px;
+    height: 609px;
+  }
+
+  .intro__button {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    background-image: url(../img/index-background-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+  }
 }

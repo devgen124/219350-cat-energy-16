@@ -1,13 +1,85 @@
-.diets-results__spec {
-  .arial (12px, 12px);
-  text-align: center;
-  color: @greyish-brown;
+.diets-results {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.diets-results__column {
+  &:last-child {
+    margin-left: auto;
+  }
 }
 
 .diets-results__number {
+  width: 124px;
+  padding: 13px 0 17px;
+  display: block;
   .oswald-regular (24px, 24px);
   text-align: center;
+  text-transform: uppercase;
   color: @black-two;
   border: 1px solid @pinkish-grey-two;
   border-radius: 3px;
+}
+
+.diets-results__spec {
+  width: 87px;
+  box-sizing: border-box;
+  margin: -9px auto 0;
+  padding: 0 5px;
+  display: block;
+  .arial (12px, 12px);
+  text-align: center;
+  color: @greyish-brown;
+  background-color: @white-three;
+}
+
+.diets-results__text {
+  margin: 0 auto;
+  padding-top: 19px;
+  .oswald-regular (14px, 20px);
+  text-transform: uppercase;
+  color: @black-two;
+}
+
+@media (min-width: @tablet-width) {
+  .diets-results__number {
+    min-width: 162px;
+    .oswald-regular (30px, 37px);
+  }
+
+  .diets-results__spec {
+    .arial (14px, 14px);
+    background: @white;
+  }
+
+  .diets-results__column {
+    &:first-child {
+      margin-right: 39px;
+    }
+
+    &:first-child .diets-results__spec {
+      width: 114px;
+    }
+
+    &:nth-child(2) .diets-results__spec {
+      width: 142px;
+    }
+  }
+
+  .diets-results__text {
+    margin-left: auto;
+    margin-right: 0;
+    padding-top: 12px;
+    .oswald-regular (20px, 20px);
+    text-align: right;
+  }
+
+  .diets-results__text span {
+    display: block;
+
+    &:first-child {
+      margin-bottom: 7px;
+    }
+  }
 }

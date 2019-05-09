@@ -1,3 +1,23 @@
+.diets-choise {
+  margin: 0 0 15px;
+}
+
 .diets-choise__list {
-  margin-bottom: -3px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.diets-choise__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .diets-choise {
+    margin: 0 0 45px;
+  }
+
+  .diets-choise__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }

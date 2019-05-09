@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="page-header__layout layout">
+    <div class="page-header__top wrapper">
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Cat Energy">
       </a>
@@ -33,7 +34,7 @@
   </header>
   <main class="page-main">
     <form class="program-form" action="https://echo.htmlacademy.ru" method="get">
-      <div class="layout">
+      <div class="wrapper">
         <header class="program-form__header form-header">
           <h1 class="form-header__title">Подбор программы</h1>
           <p class="form-header__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
@@ -55,7 +56,7 @@
         </fieldset>
       </div>
       <fieldset class="program-form__target target-form">
-        <div class="layout">
+        <div class="wrapper">
           <legend class="visually-hidden">Цель программы</legend>
           <label class="target-form__label radio-form">
             <input class="radio-form__input" type="radio" name="target" checked>
@@ -71,7 +72,7 @@
           </label>
         </div>
       </fieldset>
-      <div class="layout">
+      <div class="wrapper">
         <fieldset class="program-form__contacts contacts-form">
           <legend class="contacts-form__legend form-legend">Контактные данные (владельца&nbsp;кота)</legend>
           <label class="contacts-form__label text-form">
@@ -113,17 +114,17 @@
   </main>
   <footer class="page-footer">
     <section class="page-footer__header">
-      <div class=" dillers layout">
-      <h2 class="dillers__welcome">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-      <p class="dillers__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 Санкт-Петербург</p>
-      </div>
-      <div class="dillers__map map">
+        <div class="page-footer__wrapper welcome">
+          <h2 class="welcome__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+          <p class="welcome__text">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span>Санкт-Петербург</span></p>
+        </div>
+      <div class="page-footer__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6059678914487!2d30.3233525!3d59.9386803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554614216158!5m2!1sru!2sru"
-          width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+          frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </section>
-    <div class="page-footer__wrapper layout">
+    <div class="page-footer__main wrapper">
       <div class="page-footer__logo">
         <a class="page-footer__logo-link" href="index.html">
           <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
