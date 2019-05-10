@@ -9,8 +9,7 @@ burger.addEventListener("click", function() {
     burger.classList.add("burger--close");
     nav.classList.remove("page-nav--closed");
     nav.classList.add("page-nav--opened");
-  };
-   if (burger.classList.contains("burger--close")) {
+  } else {
     burger.classList.remove("burger--close");
     burger.classList.add("burger--open");
     nav.classList.remove("page-nav--opened");
