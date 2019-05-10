@@ -4,6 +4,21 @@
   .arial (12px, 16px);
 }
 
+.spec-table__row {
+  height: 5px;
+}
+
 .spec-table__value {
   text-align: right;
+}
+
+@media (min-width: @tablet-width) {
+  .spec-table {
+    .arial (16px, 16px);
+  }
+
+  .spec-table__row {
+    height: 32px;
+    border-bottom: 1px solid @pinkish-grey-two;
+  }
 }

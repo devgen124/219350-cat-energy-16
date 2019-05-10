@@ -1,3 +1,23 @@
+.page-nav {
+  display: none;
+}
+
+.page-nav--no-js {
+  display: block;
+}
+
 .page-nav__list {
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav__list {
+    margin-top: 37px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-nav__list {
+    margin-top: 66px;
+  }
 }

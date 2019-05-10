@@ -1,8 +1,20 @@
 .burger {
+  display: inline-block;
   width: 25px;
   height: 19px;
   font-size: 0;
-  background: none;
-  background-image: url("../img/icon-mobile-menu.svg");
+  background: transparent;
   border: none;
+}
+
+.burger--no-js {
+  display: none;
+}
+
+.burger--open {
+  background-image: url("../img/icon-mobile-menu.svg");
+}
+
+.burger--close {
+  background-image: url("../img/icon-close.svg");
 }

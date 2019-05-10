@@ -1,9 +1,5 @@
 .adds-form {
   padding: 0;
-  .oswald-regular (16px, 18px);
-  text-align: left;
-  text-transform: uppercase;
-  color: @black;
   border: none;
 }
 
@@ -13,4 +9,26 @@
 
 .adds-form__label {
   margin: 0 0 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .adds-form__legend {
+    margin-bottom: 67px;
+  }
+
+  .adds-form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .adds-form__label {
+    margin: 0 0 52px;
+    padding-left: 11px;
+
+    &:last-child,
+    &:nth-last-child(2) {
+      margin-bottom: 10px;
+    }
+  }
 }

@@ -1,0 +1,75 @@
+.diets-program {
+  padding: 20px;
+  background-color: @white-three;
+}
+
+.diets-program__title {
+  position: relative;
+  margin: 0 0 30px;
+  padding-top: 10px;
+  padding-left: 70px;
+  .oswald-regular (24px, 37px);
+  color: @black-two;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.diets-program__text {
+  padding-bottom: 22px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid @light-grey-opacity;
+}
+
+.diets-program__link {
+  .oswald-regular (16px, 16px);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+  color: @black-two;
+}
+
+@media (min-width: @tablet-width) {
+  .diets-program {
+    padding-left: 53px;
+    padding-bottom: 55px;
+  }
+
+  .diets-program__title {
+    margin-bottom: 26px;
+    padding-top: 56px;
+    padding-left: 0;
+    .oswald-regular (36px, 37px);
+  }
+
+  .diets-program__text {
+    max-width: 372px;
+    margin-bottom: 56px;
+    padding: 0;
+    border: none;
+  }
+
+  .diets-program__text--lesser-width {
+    max-width: 344px;
+  }
+
+  .diets-program__link {
+    .oswald-regular (20px, 20px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .diets-program {
+    box-sizing: border-box;
+    width: 570px;
+  }
+
+  .diets-program__title {
+    padding-left: 162px;
+    margin-bottom: 74px;
+  }
+
+  .diets-program__text {
+    max-width: 463px;
+    margin-bottom: 32px;
+  }
+}

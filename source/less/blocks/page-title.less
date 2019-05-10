@@ -1,8 +1,22 @@
 .page-title {
-  margin: 0 0 13px;
+  margin: 0 0 28px;
   padding-top: 15px;
-  padding-bottom: 15px;
   .oswald-regular (36px, 60px);
   text-align: left;
   color: @black-two;
+}
+
+@media (min-width: @tablet-width) {
+  .page-title {
+    margin-bottom: 83px;
+    padding-top: 66px;
+    .oswald-regular (60px, 60px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-title {
+    margin-bottom: 83px;
+    padding-top: 59px;
+  }
 }

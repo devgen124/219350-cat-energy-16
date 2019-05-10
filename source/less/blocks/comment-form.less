@@ -1,9 +1,5 @@
 .comment-form {
   padding: 0;
-  .oswald-regular (16px, 18px);
-  text-align: left;
-  text-transform: uppercase;
-  color: @black;
   border: none;
 }
 
@@ -15,8 +11,19 @@
   width: 100%;
   box-sizing: border-box;
   min-height: 150px;
-  padding: 13px 16px;
+  padding: 11px 13px;
   display: block;
   text-transform: uppercase;
   resize: none;
+}
+
+@media (min-width: @tablet-width) {
+  .comment-form__legend {
+    margin-bottom: 76px;
+  }
+
+  .comment-form__input {
+    min-height: 174px;
+    padding: 14px 18px;
+  }
 }
