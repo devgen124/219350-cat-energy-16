@@ -1,17 +1,36 @@
 .contacts-form {
   padding: 0;
-  .oswald-regular (16px, 18px);
-  text-align: left;
-  text-transform: uppercase;
-  color: @black;
   border: none;
 }
 
 .contacts-form__legend {
-  max-width: 181px;
   margin-bottom: 34px;
 }
 
 .contacts-form__label {
   margin-bottom: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-form__legend {
+    margin-bottom: 77px;
+  }
+
+  .contacts-form__label {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-form__wrapper {
+    display: flex;
+  }
+
+  .contacts-form__label {
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-right: 78px;
+    }
+  }
 }

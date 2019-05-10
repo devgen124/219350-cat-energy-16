@@ -1,8 +1,28 @@
 .form-main {
   padding: 0;
-  .oswald-regular (16px, 18px);
-  text-align: left;
-  text-transform: uppercase;
-  color: @black;
   border: none;
+}
+
+.form-main__label {
+  margin-bottom: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-main {
+    .oswald-regular (20px, 20px);
+  }
+
+  .form-main__label {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-main {
+    flex-grow: 1;
+  }
+
+  .form-main__label:last-child {
+    margin-bottom: 0;
+  }
 }

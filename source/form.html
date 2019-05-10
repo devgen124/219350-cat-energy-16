@@ -9,15 +9,15 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="page-header__top wrapper">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Cat Energy">
-      </a>
-      <button class="page-header__toggle burger" type="button">Открыть меню</button>
-    </div>
-    <nav class="page-nav">
-      <div class="page-nav__wrapper">
+  <div class="wrapper">
+    <header class="page-header">
+      <div class="page-header__top">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Cat Energy">
+        </a>
+        <button class="page-header__toggle burger burger--no-js" type="button">Открыть меню</button>
+      </div>
+      <nav class="page-nav page-nav--no-js">
         <ul class="page-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -25,64 +25,64 @@
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__item--active" href="form.html">Подбор программы</a>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
+  </div>
   <main class="page-main">
     <form class="program-form" action="https://echo.htmlacademy.ru" method="get">
-      <div class="wrapper">
+      <div class="wrapper wrapper--more">
         <header class="program-form__header form-header">
           <h1 class="form-header__title">Подбор программы</h1>
           <p class="form-header__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         </header>
-        <fieldset class="program-form__main form-main">
-          <legend class="visually-hidden">Основные данные</legend>
-          <label class="form-main__label text-form">
-            <span class="text-form__text">Имя:*</span>
-            <input class="text-form__input" type="text" name="name" placeholder="Барсик" required>
-          </label>
-          <label class="form-main__label text-form">
-            <span class="text-form__text">Вес (кг):*</span>
-            <input class="text-form__input" type="number" name="weight" placeholder="7" required>
-          </label>
-          <label class="form-main__label text-form">
-            <span class="text-form__text">Возраст (лет):</span>
-            <input class="text-form__input" type="number" name="age" placeholder="7">
-          </label>
-        </fieldset>
-      </div>
-      <fieldset class="program-form__target target-form">
-        <div class="wrapper">
-          <legend class="visually-hidden">Цель программы</legend>
-          <label class="target-form__label radio-form">
-            <input class="radio-form__input" type="radio" name="target" checked>
-            <span class="radio-form__text">Похудение</span>
-          </label>
-          <label class="target-form__label radio-form">
-            <input class="radio-form__input" type="radio" name="target">
-            <span class="radio-form__text">Набор массы</span>
-          </label>
-          <label class="target-form__label radio-form">
-            <input class="radio-form__input" type="radio" name="target">
-            <span class="radio-form__text">Не знаю (Нужен ваш совет)</span>
-          </label>
+        <div class="program-form__columns">
+          <fieldset class="program-form__main form-main">
+            <legend class="visually-hidden">Основные данные</legend>
+            <label class="form-main__label text-form">
+              <span class="text-form__text">Имя:*</span>
+              <input class="text-form__input" type="text" name="name" placeholder="Барсик" required>
+            </label>
+            <label class="form-main__label text-form">
+              <span class="text-form__text">Вес (кг):*</span>
+              <input class="text-form__input" type="number" name="weight" placeholder="7" required>
+            </label>
+            <label class="form-main__label text-form">
+              <span class="text-form__text">Возраст (лет):</span>
+              <input class="text-form__input" type="number" name="age" placeholder="7">
+            </label>
+          </fieldset>
+          <fieldset class="program-form__target target-form">
+            <legend class="visually-hidden">Цель программы</legend>
+            <label class="target-form__label radio-form">
+              <input class="radio-form__input" type="radio" name="target" checked>
+              <span class="radio-form__text">Похудение</span>
+            </label>
+            <label class="target-form__label radio-form">
+              <input class="radio-form__input" type="radio" name="target">
+              <span class="radio-form__text">Набор массы</span>
+            </label>
+            <label class="target-form__label radio-form">
+              <input class="radio-form__input" type="radio" name="target">
+              <span class="radio-form__text">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </fieldset>
         </div>
-      </fieldset>
-      <div class="wrapper">
         <fieldset class="program-form__contacts contacts-form">
           <legend class="contacts-form__legend form-legend">Контактные данные (владельца&nbsp;кота)</legend>
-          <label class="contacts-form__label text-form">
-            <span class="text-form__text">E-mail:*</span>
-            <input class="text-form__input" type="text" name="e-mail" placeholder="kuklachev@gmail.com" required>
-          </label>
-          <label class="contacts-form__label text-form">
-            <span class="text-form__text">Телефон:*</span>
-            <input class="text-form__input" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
-          </label>
+          <div class="contacts-form__wrapper">
+            <label class="contacts-form__label text-form">
+              <span class="text-form__text">E-mail:*</span>
+              <input class="text-form__input" type="text" name="e-mail" placeholder="kuklachev@gmail.com" required>
+            </label>
+            <label class="contacts-form__label text-form">
+              <span class="text-form__text">Телефон:*</span>
+              <input class="text-form__input" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
+            </label>
+          </div>
         </fieldset>
         <fieldset class="program-form__comment comment-form">
           <legend class="comment-form__legend form-legend">Комментарий</legend>
@@ -90,34 +90,40 @@
         </fieldset>
         <fieldset class="program-form__adds adds-form">
           <legend class="adds-form__legend form-legend">Дополнительно</legend>
-          <label class="adds-form__label checkbox-form">
-            <input class="checkbox-form__input" type="checkbox" name="sweetener" checked>
-            <span class="checkbox-form__text">Сахарозаменитель</span>
-          </label>
-          <label class="adds-form__label checkbox-form">
-            <input class="checkbox-form__input" type="checkbox" name="water">
-            <span class="checkbox-form__text">Питьевая вода</span>
-          </label>
-          <label class="adds-form__label checkbox-form">
-            <input class="checkbox-form__input" type="checkbox" name="milk">
-            <span class="checkbox-form__text">Молоко</span>
-          </label>
-          <label class="adds-form__label checkbox-form">
-            <input class="checkbox-form__input" type="checkbox" name="vitamins">
-            <span class="checkbox-form__text">Витамины</span>
-          </label>
+          <div class="adds-form__wrapper">
+            <label class="adds-form__label checkbox-form">
+              <input class="checkbox-form__input" type="checkbox" name="sweetener" checked>
+              <span class="checkbox-form__text">Сахарозаменитель</span>
+            </label>
+            <label class="adds-form__label checkbox-form">
+              <input class="checkbox-form__input" type="checkbox" name="water">
+              <span class="checkbox-form__text">Питьевая вода</span>
+            </label>
+            <label class="adds-form__label checkbox-form">
+              <input class="checkbox-form__input" type="checkbox" name="milk">
+              <span class="checkbox-form__text">Молоко</span>
+            </label>
+            <label class="adds-form__label checkbox-form">
+              <input class="checkbox-form__input" type="checkbox" name="vitamins">
+              <span class="checkbox-form__text">Витамины</span>
+            </label>
+          </div>
         </fieldset>
-        <button class="program-form__button button button--font-bigger" type="submit">Отправить заявку</button>
-        <p class="program-form__explanation">* — Обязательные поля</p>
+        <div class="program-form__footer">
+          <button class="program-form__button button button--font-bigger button--form" type="submit">Отправить заявку</button>
+          <p class="program-form__explanation">* — Обязательные поля</p>
+        </div>
       </div>
     </form>
   </main>
   <footer class="page-footer">
     <section class="page-footer__header">
+      <div class="wrapper wrapper--more">
         <div class="page-footer__wrapper welcome">
           <h2 class="welcome__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
           <p class="welcome__text">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span>Санкт-Петербург</span></p>
         </div>
+      </div>
       <div class="page-footer__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6059678914487!2d30.3233525!3d59.9386803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554614216158!5m2!1sru!2sru"
@@ -151,6 +157,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>

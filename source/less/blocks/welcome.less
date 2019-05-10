@@ -1,14 +1,9 @@
 .welcome {
-  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   margin-bottom: -5px;
   padding-top: 28px;
   padding-bottom: 27px;
-}
-
-.welcome--white {
-  background: @white;
 }
 
 .welcome__title {
@@ -31,7 +26,8 @@
 
 @media (min-width: @tablet-width) {
   .welcome {
-    padding: 64px 67px 60px 71px;
+    padding-top: 66px;
+    padding-bottom: 61px;
   }
 
   .welcome__title {
@@ -47,5 +43,18 @@
       display: block;
       padding-top: 19px;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome {
+    min-width: 432px;
+    padding: 62px 60px 56px 76px;
+    background: @white;
+  }
+
+  .welcome__text {
+    margin-right: 29px;
+    text-align: left;
   }
 }

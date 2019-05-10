@@ -4,15 +4,39 @@
   padding: 16px 0;
   .oswald-regular (36px, 60px);
   text-align: left;
-  color: @black-two;
 }
 
 .form-header__text {
-  max-width: 226px;
   margin: 0;
   padding: 0;
+  width: 250px;
   .oswald-regular (14px, 18px);
   text-align: left;
   text-transform: uppercase;
   color: @black-two;
+}
+
+@media (min-width: @tablet-width) {
+  .form-header__title {
+    margin-left: -40px;
+    margin-bottom: 39px;
+    padding-top: 67px;
+    .oswald-regular (60px, 60px);
+  }
+
+  .form-header__text {
+    width: 330px;
+    .oswald-regular (20px, 30px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-header__title {
+    margin-left: 0;
+    padding-top: 60px;
+  }
+
+  .form-header__text {
+    width: 370px;
+  }
 }

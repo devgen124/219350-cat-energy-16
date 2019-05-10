@@ -1,15 +1,15 @@
 .page-header {
-  border-bottom: 1px solid @light-grey;
+  margin: 0 -20px;
   position: relative;
   z-index: 1;
+  border-bottom: 1px solid @light-grey;
 }
 
 .page-header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 11px;
-  padding-bottom: 15px;
+  padding: 11px 20px 15px;
 }
 
 .page-header__logo {
@@ -20,9 +20,15 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
+    margin: 0;
     display: flex;
     justify-content: space-between;
     border: none;
+  }
+
+  .page-header__top {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .page-header__toggle {
@@ -31,7 +37,16 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header {
-    margin-bottom: -104px;
+  .page-header--downshift {
+    margin-bottom: -129px;
+  }
+
+  .page-header__logo {
+    margin-top: 43px;
+  }
+
+  .page-header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 }

@@ -1,12 +1,11 @@
-
 .diets-program {
   padding: 20px;
   background-color: @white-three;
 }
 
 .diets-program__title {
-  margin: 0;
-  margin-bottom: 30px;
+  position: relative;
+  margin: 0 0 30px;
   padding-top: 10px;
   padding-left: 70px;
   .oswald-regular (24px, 37px);
@@ -55,5 +54,22 @@
 
   .diets-program__link {
     .oswald-regular (20px, 20px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .diets-program {
+    box-sizing: border-box;
+    width: 570px;
+  }
+
+  .diets-program__title {
+    padding-left: 162px;
+    margin-bottom: 74px;
+  }
+
+  .diets-program__text {
+    max-width: 463px;
+    margin-bottom: 32px;
   }
 }

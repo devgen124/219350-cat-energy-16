@@ -21,3 +21,16 @@
     margin-bottom: 30px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .diets-choise__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .diets-choise__item:not(:last-child),
+  .diets-choise__item:not(:nth-last-child(2)) {
+    margin-bottom: 30px;
+  }
+}

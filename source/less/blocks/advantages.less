@@ -38,18 +38,30 @@
   }
 
   .advantages__item {
-    width: 325px;
+    width: 245px;
     margin-bottom: 131px;
     padding-left: 0;
     padding-top: 112px;
   }
+}
 
+@media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
   .advantages__item:last-child,
   .advantages__item:nth-last-child(2) {
     margin-bottom: 56px;
   }
 
-  .advantages__text {
-    padding-right: 70px;
+  .advantages__item:nth-child(2n) {
+    margin-right: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    margin-bottom: 5px;
+  }
+
+  .advantages__item {
+    margin-bottom: 50px;
   }
 }

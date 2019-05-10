@@ -12,7 +12,7 @@
 
 .example__text {
   margin: 0 0 25px;
-  padding-right: 5px;
+  padding-right: 8px;
 }
 
 .example__results {
@@ -34,5 +34,31 @@
 
   .example__text {
     margin: 0 0 54px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    padding-bottom: 73px;
+    background-image: linear-gradient(to top, @white-three, @white-three 462px, @white 462px, @white);
+    border: none;
+  }
+
+  .example__columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__column:first-child {
+    max-width: 440px;
+  }
+
+  .example__title {
+    margin-bottom: 147px;
+    padding-top: 67px;
+  }
+
+  .example__text {
+    margin-bottom: 68px;
   }
 }
