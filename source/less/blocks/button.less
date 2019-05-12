@@ -1,7 +1,7 @@
 .button {
   width: 100%;
   box-sizing: border-box;
-  padding: 10px 0;
+  padding: 11px 0;
   display: block;
 
   .oswald-regular(14px, 18px);
@@ -11,6 +11,15 @@
   text-transform: uppercase;
   border: none;
   background-color: @leaf;
+
+  &:hover,
+  &:focus {
+    background-color: @grass;
+  }
+
+  &:active {
+    color: @white30;
+  }
 }
 
 .button--font-bigger {
