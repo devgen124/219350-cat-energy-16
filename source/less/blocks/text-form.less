@@ -1,29 +1,75 @@
 .text-form {
+  width: 100%;
   display: flex;
   align-items: center;
-  width: 100%;
+  position: relative;
+
+  svg {
+    position: absolute;
+    right: 15px;
+  }
 }
 
 .text-form__input {
-  padding: 12px 15px 10px 16px;
+  box-sizing: border-box;
+  height: 52px;
+  padding: 12px 15px 10px 13px;
   flex-grow: 1;
+
+  border: 1px solid @pinkish-grey-two-opacity;
+
+  &:hover,
+  &:focus {
+    border: 1px solid @pinkish-grey-two;
+  }
+
+  &:active {
+    padding: 11px 14px 9px 12px;
+
+    border: 2px solid @greyish-brown;
+  }
+
+  &:active + svg {
+    fill: @leaf;
+  }
+
+  &:invalid {
+    padding: 11px 14px 9px 12px;
+
+    border: 2px solid @tomato;
+  }
+
+  &:invalid + svg {
+    fill: @tomato;
+  }
 }
 
 .text-form__input::placeholder {
   text-transform: uppercase;
+  color: @greyish-brown;
 }
 
 .text-form__text {
-  padding-right: 14px;
+  padding-right: 13px;
   text-transform: uppercase;
 }
 
 @media (min-width: @tablet-width) {
   .text-form__text {
-    padding-right: 19px;
+    padding-right: 16px;
   }
 
   .text-form__input {
-    padding: 12px 15px 10px 15px;
+    padding: 12px 15px 12px 15px;
+
+    &:active {
+      padding: 11px 14px 11px 14px;
+
+      border: 2px solid @greyish-brown;
+    }
+
+    &:invalid {
+      padding: 11px 14px 10px 13px;
+    }
   }
 }

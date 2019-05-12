@@ -9,6 +9,23 @@
 .checkbox-form__text {
   padding-left: 46px;
   text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: -3px;
+    left: 0;
+
+    content: "";
+    border: 1px solid @pinkish-grey-two;
+  }
+}
+
+.checkbox-form__input:checked + .checkbox-form__text::before {
+  background: url("../img/icon-tick.svg") center no-repeat;
+  background-size: 22px 17px;
 }
 
 @media (min-width: @tablet-width) {
