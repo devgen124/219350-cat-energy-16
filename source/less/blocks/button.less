@@ -1,7 +1,7 @@
 .button {
   width: 100%;
   box-sizing: border-box;
-  padding: 11px 0;
+  padding: 10px 0;
   display: block;
 
   .oswald-regular(14px, 18px);
@@ -11,6 +11,7 @@
   text-transform: uppercase;
   border: none;
   background-color: @leaf;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -29,6 +30,15 @@
 .button--grey {
   color: @greyish-brown;
   background-color: @white-three;
+
+  &:hover,
+  &:focus {
+    background-color: @white-four;
+  }
+
+  &:active {
+    color: @greyish-brown30;
+  }
 }
 
 @media (min-width: @tablet-width) {

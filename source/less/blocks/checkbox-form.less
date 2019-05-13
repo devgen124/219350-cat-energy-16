@@ -4,6 +4,10 @@
 
 .checkbox-form__input {
   display: none;
+
+  &:disabled + .checkbox-form__text {
+    opacity: 0.3;
+  }
 }
 
 .checkbox-form__text {
@@ -28,9 +32,20 @@
   background-size: 22px 17px;
 }
 
+.checkbox-form__input:hover + .checkbox-form__text::before {
+  border-color: @pinkish-grey;
+}
+
 @media (min-width: @tablet-width) {
   .checkbox-form {
     min-width: 272px;
+  }
+
+  .checkbox-form__text::before {
+    width: 38px;
+    height: 38px;
+    top: -5px;
+    left: -11px;
   }
 }
 
