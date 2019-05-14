@@ -1,5 +1,6 @@
 .radio-form {
   display: block;
+  position: relative;
 }
 
 .radio-form__input {
@@ -7,11 +8,54 @@
 }
 
 .radio-form__text {
-  padding-left: 67px;
+  padding-left: 66px;
+
+  &::before {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: -7px;
+    left: 19px;
+
+    content: "";
+    border: 1px solid @pinkish-grey-two;
+    border-radius: 50%;
+  }
+
+  &::after {
+    display: none;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 28px;
+
+    content: "";
+    border-radius: 50%;
+    background-color: @leaf;
+  }
+}
+
+.radio-form__input:checked + .radio-form__text::after {
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
   .radio-form__text {
-    padding-left: 56px;
+    padding-left: 54px;
+
+    &::before {
+      width: 38px;
+      height: 38px;
+      top: -8px;
+      left: -5px;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+      top: 3px;
+      left: 6px;
+    }
   }
 }

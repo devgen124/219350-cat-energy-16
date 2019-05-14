@@ -11,6 +11,16 @@
   text-transform: uppercase;
   border: none;
   background-color: @leaf;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: @grass;
+  }
+
+  &:active {
+    color: @white30;
+  }
 }
 
 .button--font-bigger {
@@ -20,6 +30,15 @@
 .button--grey {
   color: @greyish-brown;
   background-color: @white-three;
+
+  &:hover,
+  &:focus {
+    background-color: @white-four;
+  }
+
+  &:active {
+    color: @greyish-brown30;
+  }
 }
 
 @media (min-width: @tablet-width) {

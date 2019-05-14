@@ -1,18 +1,21 @@
-.page-nav {
-  display: none;
-}
-
-.page-nav--no-js {
-  display: block;
-}
-
 .page-nav__list {
   margin: 0;
 }
 
+@media (max-width: @tablet-width - 1) {
+  .page-nav--closed {
+    display: none;
+  }
+
+  .page-nav--no-js,
+  .page-nav--opened {
+    display: block;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-nav__list {
-    margin-top: 37px;
+    margin-top: 36px;
   }
 }
 

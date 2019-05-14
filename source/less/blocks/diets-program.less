@@ -1,10 +1,48 @@
 .diets-program {
-  padding: 20px;
+  padding: 20px 20px 17px 20px;
+  position: relative;
   background-color: @white-three;
 }
 
+.diets-program::before {
+  width: 50px;
+  height: 51px;
+  position: absolute;
+  top: 24px;
+  left: 22px;
+
+  content: "";
+  border-radius: 50%;
+  background-color: @leaf;
+}
+
+.diets-program::after {
+  position: absolute;
+
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.diets-program--cat-slim::after {
+  width: 35px;
+  height: 49px;
+  top: 22px;
+  left: 30px;
+
+  background-image: url("../img/icon-cat-slim.svg");
+}
+
+.diets-program--cat-pro::after {
+  width: 67px;
+  height: 28px;
+  top: 35px;
+  left: 13px;
+
+  background-image: url("../img/icon-cat-pro.svg");
+}
+
+
 .diets-program__title {
-  position: relative;
   margin: 0 0 30px;
   padding-top: 10px;
   padding-left: 70px;
@@ -17,10 +55,12 @@
 .diets-program__text {
   padding-bottom: 22px;
   margin-bottom: 20px;
+  position: relative;
   border-bottom: 1px solid @light-grey-opacity;
 }
 
 .diets-program__link {
+  position: relative;
   .oswald-regular (16px, 16px);
   text-decoration: none;
   text-transform: uppercase;
@@ -28,10 +68,42 @@
   color: @black-two;
 }
 
+.diets-program__link::after {
+  width: 34px;
+  height: 12px;
+  position: absolute;
+  top: 6px;
+  right: -46px;
+
+  content: "";
+  background: url("../img/icon-right-arrow-long.svg") left no-repeat;
+}
+
 @media (min-width: @tablet-width) {
   .diets-program {
     padding-left: 53px;
     padding-bottom: 55px;
+  }
+
+  .diets-program::before {
+    width: 200px;
+    height: 200px;
+    top: 93px;
+    left: 446px;
+  }
+
+  .diets-program--cat-slim::after {
+    width: 141px;
+    height: 194px;
+    top: 80px;
+    left: 476px;
+  }
+
+  .diets-program--cat-pro::after {
+    width: 268px;
+    height: 113px;
+    top: 136px;
+    left: 412px;
   }
 
   .diets-program__title {
@@ -54,6 +126,16 @@
 
   .diets-program__link {
     .oswald-regular (20px, 20px);
+
+    &:hover::after,
+    &:focus::after {
+      background: url("../img/icon-right-arrow-verylong.svg") left no-repeat;
+    }
+  }
+
+  .diets-program__link::after {
+    top: 8px;
+    right: -57px;
   }
 }
 
@@ -61,6 +143,27 @@
   .diets-program {
     box-sizing: border-box;
     width: 570px;
+  }
+
+  .diets-program::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 53px;
+  }
+
+  .diets-program--cat-slim::after {
+    width: 71px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
+  }
+
+  .diets-program--cat-pro::after {
+    width: 134px;
+    height: 57px;
+    top: 69px;
+    left: 35px;
   }
 
   .diets-program__title {

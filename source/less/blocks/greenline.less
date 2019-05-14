@@ -1,0 +1,51 @@
+.greenline {
+  margin-left: -20px;
+  padding: 0 20px;
+  position: relative;
+  display: inline-block;
+  background-color: @white;
+
+  &::after {
+    width: 100vw;
+    height: 3px;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    z-index: -1;
+
+    content: "";
+    background-color: @leaf;
+  }
+}
+
+.greenline--widthfix {
+  margin-right: 79px;
+}
+
+@media (min-width: @tablet-width) {
+  .greenline {
+    margin-left: -38px;
+    padding: 0 38px;
+
+    &::after {
+      top: 23px;
+      left: -32px;
+    }
+  }
+
+  .greenline--widthfix {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .greenline {
+    margin-left: -38px;
+    padding: 0 38px;
+
+    &::after {
+      top: 23px;
+      left: -72px;
+    }
+  }
+}
