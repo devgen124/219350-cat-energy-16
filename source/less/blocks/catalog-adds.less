@@ -47,6 +47,12 @@
   text-align: center;
 }
 
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .catalog-adds__promo {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
 @media (min-width: @tablet-width) {
   .catalog-adds {
     margin: 0 0 76px;
@@ -85,6 +91,12 @@
     max-width: 170px;
     text-align: left;
   }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .catalog-adds__promo {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -120,5 +132,11 @@
     padding: 188px 0 0;
     max-width: 170px;
     text-align: center;
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .catalog-adds__promo {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 }
