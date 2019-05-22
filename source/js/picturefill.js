@@ -8,17 +8,17 @@
  * not react to viewport changes. This tiny module fixes this.
  */
 (function(window) {
-	/*jshint eqnull:true */
+/*jshint eqnull:true */
 var ua = navigator.userAgent;
 
-	if ( window.HTMLPictureElement && ((/ecko/).test(ua) && ua.match(/rv\:(\d+)/) && RegExp.$1 < 45) ) {
-		addEventListener("resize", (function() {
-			var timer;
+if ( window.HTMLPictureElement && ((/ecko/).test(ua) && ua.match(/rv\:(\d+)/) && RegExp.$1 < 45) ) {
+  addEventListener("resize", (function() {
+    var timer;
 
-			var dummySrc = document.createElement("source");
+		var dummySrc = document.createElement("source");
 
-			var fixRespimg = function(img) {
-				var source, sizes;
+		var fixRespimg = function(img) {
+		    var source, sizes;
 				var picture = img.parentNode;
 
 				if (picture.nodeName.toUpperCase() === "PICTURE") {

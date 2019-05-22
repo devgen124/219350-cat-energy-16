@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -13,7 +15,7 @@
   <div class="wrapper">
     <header class="page-header">
       <div class="page-header__top">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -353,7 +355,7 @@
       <div class="page-footer__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6059678914487!2d30.3233525!3d59.9386803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554614216158!5m2!1sru!2sru"
-          frameborder="0" style="border:0" allowfullscreen></iframe>
+          style="border:0" allowfullscreen></iframe>
       </div>
     </section>
     <div class="page-footer__main wrapper">
@@ -391,15 +393,15 @@
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <span>HTML Academy</span>
           <svg width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
-            <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
   <script src="js/mobile-menu.js"></script>
-  <script src="js/picturefill.js"></script>
-  <script src="js/svgxuse.js"></script>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
 </body>
 
 </html>

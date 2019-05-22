@@ -40,6 +40,11 @@
   display: block;
 }
 
+.radio-form__input:hover + .radio-form__text::before,
+.radio-form__input:focus + .radio-form__text::before {
+  border-color: @pinkish-grey;
+}
+
 @media (min-width: @tablet-width) {
   .radio-form__text {
     padding-left: 54px;

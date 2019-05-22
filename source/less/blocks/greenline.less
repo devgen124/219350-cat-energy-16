@@ -43,6 +43,18 @@
     margin-left: -38px;
     padding: 0 38px;
 
+    &::before {
+      width: 100vw;
+      height: 3px;
+      position: absolute;
+      top: 23px;
+      right: 0;
+      z-index: -1;
+
+      content: "";
+      background-color: @leaf;
+    }
+
     &::after {
       top: 23px;
       left: -72px;

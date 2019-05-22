@@ -30,7 +30,7 @@
     padding: 0;
     border-top: 1px solid @light-grey;
     background: none;
-    background-image: linear-gradient(to top, @white-three, @white-three 462px, @white 462px, @white);
+    background-image: linear-gradient(to bottom, @white, @white 593px, @white-three 593px, @white-three);
   }
 
   .example__columns {
@@ -80,6 +80,18 @@
 @media (min-width: @desktop-width) {
   .example {
     border: none;
+    position: relative;
+    background-image: linear-gradient(to bottom, @white, @white 190px, @white-three 190px, @white-three);
+
+    &::after {
+      width: 27.2%;
+      position: absolute;
+      top: 190px;
+      right: 0;
+      bottom: 0;
+      content: "";
+      background-color: @grey-two;
+    }
   }
 
   .example__columns {
