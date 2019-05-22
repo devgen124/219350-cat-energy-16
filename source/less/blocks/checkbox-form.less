@@ -2,12 +2,8 @@
   display: block;
 }
 
-.checkbox-form__input {
-  display: none;
-
-  &:disabled + .checkbox-form__text {
-    opacity: 0.3;
-  }
+.checkbox-form__input:disabled + .checkbox-form__text {
+  opacity: 0.3;
 }
 
 .checkbox-form__text {
