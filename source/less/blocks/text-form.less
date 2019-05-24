@@ -14,6 +14,7 @@
   text-transform: uppercase;
 
   border: 1px solid @pinkish-grey-two-opacity;
+  appearance: textfield;
 
   &--email + svg {
     position: absolute;
@@ -71,6 +72,10 @@
 @media (min-width: @tablet-width) {
   .text-form__text {
     padding-right: 20px;
+
+    &--paddingfix {
+      padding-right: 13px;
+    }
   }
 
   .text-form__input {
